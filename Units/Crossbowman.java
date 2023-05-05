@@ -6,8 +6,18 @@ public class Crossbowman extends Shooter {
                 50, 0.5f, 10);
     }
 
+    @Override
     public String toString() {
-        return name;
+        return "Арбалетчик";
     }
 
+    @Override
+    public void step() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return super.getInfo();
+    }
 }

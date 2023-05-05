@@ -8,7 +8,17 @@ public class Sniper extends Shooter {
 
     @Override
     public String toString() {
-        return name;
+        return "Снайпер";
+    }
+
+    @Override
+    public void step() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 
 }

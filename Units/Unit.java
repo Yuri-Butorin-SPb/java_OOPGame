@@ -1,16 +1,15 @@
 package Units;
 
-public class Unit {
+public abstract class Unit implements GameInterface {
     protected String name;
-    protected float hp, luck, armor;
-    protected int speed, damage;
+    protected float maxHp, currentHp, luck, armor;
+    protected int speed, attack;
 
-    Unit(String name, float hp, float luck, int speed, int damage, float armor) {
+    Unit(String name, float maxHp, float luck, int speed, int attack, float armor) {
         this.name = name;
-        this.hp = hp;
         this.luck = luck;
         this.speed = speed;
-        this.damage = damage;
+        this.attack = attack;
         this.armor = armor;
     }
 
@@ -23,11 +22,15 @@ public class Unit {
     void defend() {
     }
 
-    void walk() {
+    void die() {
 
     }
 
-    void die() {
-
+    @Override
+    public String getInfo() {
+        return "[" + name + " " + toString() + "] hp:" +
+                currentHp + "/" + maxHp + " luck:" + luck
+                + " speed:" + speed + " attack:" + attack
+                + " armor:" + armor;
     }
 }

@@ -8,11 +8,16 @@ public class Monk extends Magican {
 
     @Override
     public String toString() {
-        return name;
+        return "Монах";
     }
 
-    void heal() {
+    @Override
+    public void step() {
 
     }
 
+    @Override
+    public String getInfo() {
+        return super.getInfo();
+    }
 }

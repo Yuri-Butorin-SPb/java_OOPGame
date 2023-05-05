@@ -8,12 +8,24 @@ public class Thief extends Unit {
 
     @Override
     public String toString() {
-        return name;
+        return "Разбойник";
     }
 
     void dodge() {
+
     }
 
     void stealth() {
+
+    }
+
+    @Override
+    public void step() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 }

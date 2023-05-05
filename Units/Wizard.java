@@ -8,15 +8,17 @@ public class Wizard extends Magican {
 
     @Override
     public String toString() {
-        return name;
+        return "Маг";
     }
 
-    void fire() {
+    @Override
+    public void step() {
 
     }
 
-    void freeze() {
-
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 
 }
