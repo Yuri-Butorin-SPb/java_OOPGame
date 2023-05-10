@@ -1,19 +1,15 @@
 package Units;
 
-public class Spearman extends Unit {
+import java.util.ArrayList;
 
-    public Spearman(String name) {
-        super(name, 30, 0.6f, 2, 4, 30);
+public class Spearman extends Unit {
+    public Spearman(String name, ArrayList<Unit> team) {
+        super(name, 30, 0.6f, 3, 4, 30, team);
     }
 
     @Override
     public String toString() {
         return "Копейщик";
-    }
-
-    @Override
-    public void step() {
-
     }
 
     @Override

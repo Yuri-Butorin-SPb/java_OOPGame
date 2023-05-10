@@ -1,9 +1,11 @@
 package Units;
 
+import java.util.ArrayList;
+
 public class Thief extends Unit {
 
-    public Thief(String name) {
-        super(name, 20, 0.8f, 3, 2, 10);
+    public Thief(String name, ArrayList<Unit> team) {
+        super(name, 20, 0.8f, 3, 2, 10, team);
     }
 
     @Override
@@ -12,15 +14,9 @@ public class Thief extends Unit {
     }
 
     void dodge() {
-
     }
 
     void stealth() {
-
-    }
-
-    @Override
-    public void step() {
 
     }
 
