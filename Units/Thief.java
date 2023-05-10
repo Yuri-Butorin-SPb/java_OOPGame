@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Thief extends Unit {
 
-    public Thief(String name, ArrayList<Unit> team) {
-        super(name, 20, 0.8f, 3, 2, 10, team);
+    public Thief(String name, ArrayList<Unit> team, int x, int y) {
+        super(name, 20, 0.8f, 3, 2, 10, team, x, y);
     }
 
     @Override
@@ -14,6 +14,7 @@ public class Thief extends Unit {
     }
 
     void dodge() {
+
     }
 
     void stealth() {
